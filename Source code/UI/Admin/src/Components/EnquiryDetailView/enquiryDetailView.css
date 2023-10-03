@@ -1,0 +1,60 @@
+.approved{
+    color: rgb(0, 207, 0)!important;
+}
+.pending{
+    color: blue!important;
+}
+.complete{
+  color: rgb(255, 156, 85);
+}
+.alignCenter tr td b{
+    word-break: break-all;
+}
+.headingWingz{
+  margin-bottom: 10px;
+}
+
+
+/* ya dekhi */
+.upper-card,
+.lower-card{
+  padding: 0 40px;
+}
+
+
+/* ya dekhi */
+.user-detail {
+padding: 20px;
+}
+.user-detail .card {
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+  border: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+.user-detail .user-profile-card {
+  text-align: center;
+}
+
+.parent-container {
+  padding: 0 0 0 20px;
+  width: 100%;
+}
+#enquiryCardz{
+  cursor:default;
+}
+#enquiryCardz .enquiryNames{
+  color: rgb(94, 161, 255);
+  
+}
+#enquiryCardz .enquiryDesc{
+  word-break: break-all;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif!important;
+
+}

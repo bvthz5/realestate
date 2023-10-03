@@ -1,0 +1,348 @@
+.Profile {
+  /* margin-top: 65px; */
+  margin-left: 10%;
+  /* background-color: red; */
+}
+.profileLabel {
+  display: flex;
+  font-family: "Ivar Headline", "Ivar Headline Subset", "Times New Roman", serif;
+  color: rgb(42, 42, 51);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  text-transform: none;
+}
+.containerProfile {
+  width: 80%;
+  background: rgb(243, 243, 243);
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(209, 209, 213);
+}
+.wrapper {
+  padding-bottom: 30px;
+}
+.wrapper .input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.wrapper .photo-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.wrapper .password-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.wrapper .input-data .inputFields {
+  height: 100%;
+  width: 80%;
+  border: none;
+  font-size: 17px;
+}
+.wrapper .photo-data .inputFields {
+  height: 100%;
+  width: 80%;
+  border: none;
+  font-size: 17px;
+}
+.wrapper .password-data .inputFields {
+  height: 100%;
+  width: 80%;
+  border: none;
+  font-size: 17px;
+}
+
+.wrapper .input-data label {
+  position: absolute;
+  bottom: 10px;
+
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper .photo-data label {
+  position: absolute;
+  bottom: 10px;
+
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper .password-data label {
+  position: absolute;
+  bottom: 10px;
+
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.photo-data .underline {
+  position: absolute;
+  height: 2px;
+  margin-top: 60px;
+  width: 100%;
+  border-bottom: 2px solid silver;
+}
+.input-data .underline {
+  position: absolute;
+  height: 2px;
+  margin-top: 60px;
+  width: 100%;
+  border-bottom: 2px solid silver;
+}
+.inputFields:focus {
+  outline: none;
+}
+.TopName {
+  color: rgb(0, 0, 0);
+}
+.personalInfo {
+  color: rgb(42, 42, 51);
+  -webkit-font-smoothing: antialiased;
+  text-transform: none;
+  font-family: "Open Sans", Tahoma, Geneva, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px;
+}
+.Leftalign .NotAvailable {
+  right: 5%;
+  overflow: hidden; /* make sure it hides the content that overflows */
+  white-space: nowrap; /* don't break the line */
+  text-overflow: ellipsis;
+  width: 10em;
+}
+.Leftalign .editSpan {
+  right: 0;
+  color: blue !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+.editbutton {
+  font-weight: bold;
+  text-transform: none;
+  background-color: transparent;
+  margin-left: 95%;
+  padding-top: -20%;
+  border-color: transparent;
+  cursor: pointer;
+}
+.manageButton {
+  text-transform: none;
+
+  font-weight: bold;
+  background-color: transparent;
+  margin-left: 14.8%;
+  padding-top: -20%;
+  border-color: transparent;
+  cursor: pointer;
+}
+.Leftalign .manageSpan {
+  right: 0;
+  color: blue !important;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+.profileAvatar {
+  height: 40px;
+  width: 40px;
+  left: 50%;
+}
+.Leftalign .verifyLabel {
+  right: 5%;
+  color: blue !important;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+.emailLabel {
+  right: 1%;
+}
+.inputting {
+}
+.chooseimage {
+  font-size: 13px;
+  border-radius: 2px;
+  border: none;
+  padding: 0 8px 0 0;
+  width: 80px;
+  height: 22px;
+  margin-top: 10px;
+}
+@media (max-width: 1190px) {
+  .inputting {
+    display: grid;
+  }
+}
+
+.changePasswordButton {
+  color: blue;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  margin-left: 9%;
+  border-width: thin;
+  border-radius: 5px;
+  padding-top: -20%;
+  border-color: blue;
+  cursor: pointer;
+}
+.wordBreak {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+.editManage {
+  right: 0;
+  color: blue !important;
+}
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #768ef5;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+  margin-left: 30px;
+}
+
+.add-btn:hover {
+  width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: #768ef5;
+  cursor: pointer;
+}
+
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-txt {
+  opacity: 0;
+  font-weight: bold;
+  color: #768ef5;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 0px;
+  display: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  height: 20px;
+  width: 3px;
+  top: calc(50% - 10px);
+  background: #768ef5;
+
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  display: none;
+}
+
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+  display: none;
+}
+
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+  display: none;
+}
+
+.inputForPic {
+  display: none;
+}
+@media (max-width: 700px) {
+  .Profile {
+    margin-top: 65px;
+  }
+  .icon-btn {
+    margin-top: 3%;
+  }
+  .profilePicture {
+    margin-top: 3%;
+  }
+
+  .wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-left: -1% !important;
+  }
+  .Profile {
+    /* margin-top: 65px; */
+    margin-left: 0% !important;
+    /* background-color: red; */
+  }
+}

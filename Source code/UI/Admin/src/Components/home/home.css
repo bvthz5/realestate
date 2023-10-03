@@ -1,0 +1,25 @@
+.home{
+    flex: 5;
+    margin-top: 30px;
+}
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.seemoreenquiry{
+    margin-bottom: 20px;
+    display: grid;
+    justify-content:right;
+    margin-right: 40px;
+    color: blue;
+  }
+.linkSeemore{
+  text-decoration: none;
+}
+  .seemoreenquiry span{
+    cursor: pointer;
+  }
+  .seemoreenquiry span:hover{
+    color: red;
+  }

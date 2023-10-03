@@ -1,0 +1,652 @@
+.propAddFiles{
+    flex: 5;
+    margin-top: 20px;
+}
+
+
+.imgupload-previewdiv {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .imgupload-imgbutton {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: none;
+  }
+  
+  .imgupload-previewimg {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .imgupload-maincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgupload-showheading {
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgupload-showlengthouter {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgupload-showlengthinner, .video-showlengthinner {
+    width: 257px;
+  overflow: hidden;
+  }
+  .imgupload-labelsss {
+    z-index: -1;
+    position: relative;
+    display: block;
+  bottom: 31px;
+  left: 75px;
+  }
+  
+  
+  .imgupload-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+   
+    background-color: rgba(205, 205, 205, 0);
+    border-bottom: 1px ridge rgba(85, 80, 80, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-top: 80px;
+  }
+  
+  .imgupload-imageblock {
+    display: block;
+  }
+  
+  .imgupload-deleteimage {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 158px;
+    margin-bottom: 3px;
+    color: #970014;
+  cursor: pointer;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  /* .imgupload-chooseimage {
+    height: 40px;
+    font-size: 13px;
+    border-radius: 2px;
+    border: none;
+    padding: 0 11px;
+  
+  }
+   */
+
+
+  
+  .imgupload-imagecontainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    height: auto;
+    background: #ffffff;
+    border-bottom: 1px ridge rgba(85, 80, 80, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-left: 28px;
+   flex-wrap: wrap;
+  }
+  
+  .imgupload-ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .imgupload-li {
+    list-style: none;
+    float: left;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 15px 15px 15px 15px;
+  }
+  
+  .imgupload-upload {
+    display: inline-block;
+    padding: 6px 14px 6px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 43px;
+    width: 180px;
+    background-color: #0077C8;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+    background-image: -linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+    background-repeat: repeat-x;
+    border: 0;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+       -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+            box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+    -webkit-transition: 0.1s;
+       -moz-transition: 0.1s;
+    transition: 0.1s;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  
+  }
+
+  .imgupload-upload:hover {
+    background-color: #0098ff;
+    -webkit-box-shadow: inset 0 -4px 0 rgba(0,0,0,.2);
+       -moz-box-shadow: inset 0 -4px 0 rgba(0,0,0,.2);
+            box-shadow: inset 0 -4px 0 rgba(0,0,0,.2);
+    margin-top: -2px;
+    padding: 6px 14px 8px;
+  }
+.imgupload-upload:active {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    margin-top: 2px;
+    padding: 6px 14px 4px;
+  }
+  .btn-ltblue { background-color: #00a4d8; }
+ .btn-ltblue:hover { background-color:#01c2ff; }
+
+  
+  /* ///editproductimage */
+  .imgupload-containerimage {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: auto;
+    min-height: 30vh;
+    background: #ffffff;
+    border-bottom: 1px ridge rgba(85, 80, 80, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-top: 90px;
+  }
+  
+  .imgupload-containeruploadimage {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: auto;
+    min-height: 60vh;
+    background: #e9e9e9;
+    border-bottom: 1px ridge rgba(85, 80, 80, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-top: 30px;
+  }
+  
+  .imgupload-imagecontainersmall {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    height: auto;
+    background: #ffffff;
+    border-bottom: 1px ridge rgba(85, 80, 80, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    overflow: hidden;
+   flex-wrap: wrap;
+  }
+  
+  /* Absolute Center Spinner */
+  .imgupload-loading {
+    position: fixed;
+    z-index: 999;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Transparent Overlay */
+  .imgupload-loading:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  /* :not(:required) hides these rules from IE9 and below */
+  .imgupload-loading:not(:required) {
+    /* hide "loading.imgupload-.imgupload-.imgupload-" text */
+    font: 0/0;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .imgupload-loading:not(:required):after {
+    content: "";
+    display: block;
+    font-size: 10px;
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+  
+    border: 5px solid rgba(33, 150, 243, 1);
+    border-radius: 100%;
+    border-bottom-color: transparent;
+    -webkit-animation: spinner 1s linear 0s infinite;
+    animation: spinner 1s linear 0s infinite;
+  }
+  
+/* video */
+
+.video-previewdiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-imgbutton {
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: none;
+}
+
+.video-previewimg {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.video-maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-showheading {
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-showlengthouter {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+ 
+  background-color: rgba(205, 205, 205, 0);
+  border-bottom: 1px ridge rgba(85, 80, 80, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+.video-imageblock {
+  display: block;
+}
+
+.video-deletevideo {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 2px;
+  margin-left: 158px;
+  margin-bottom: 3px;
+  color: #970014;
+cursor: pointer;
+  font-family: "proxima-nova-soft", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.video-chooseimage {
+  height: 40px;
+  font-size: 13px;
+  border-radius: 2px;
+  border: none;
+  padding: 0 11px;
+
+}
+
+.video-labelsss {
+  position: relative;
+  bottom: 38px;
+  left: 52px;
+}
+
+
+
+.video-imagecontainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-bottom: 1px ridge rgba(85, 80, 80, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 28px;
+ flex-wrap: wrap;
+}
+
+.video-ul {
+  padding: 0px;
+  margin: 0px;
+}
+.video-previewvid{
+  width: 300px;
+  height: 300px;
+}
+.video-li {
+  list-style: none;
+  float: left;
+  border: 1px solid black;
+  padding: 5px;
+  width: 350px;
+  margin: 15px 15px 15px 15px;
+}
+
+.video-upload {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: #002f34;
+  font-family: "proxima-nova-soft", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* ///editproductimage */
+.video-containerimage {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: auto;
+  min-height: 30vh;
+  background: #ffffff;
+  border-bottom: 1px ridge rgba(85, 80, 80, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin-left: 300px;
+  margin-top: 90px;
+}
+
+.video-containeruploadimage {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: auto;
+  min-height: 60vh;
+  background: #e9e9e9;
+  border-bottom: 1px ridge rgba(85, 80, 80, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.video-imagecontainersmall {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+  height: auto;
+  background: #ffffff;
+  border-bottom: 1px ridge rgba(85, 80, 80, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+ flex-wrap: wrap;
+}
+
+/* Absolute Center Spinner */
+.video-loading {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+/* Transparent Overlay */
+.video-loading:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.video-loading:not(:required) {
+  /* hide "loading.video-.video-.video-" text */
+  font: 0/0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.video-loading:not(:required):after {
+  content: "";
+  display: block;
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: -0;
+
+  border: 5px solid rgba(33, 150, 243, 1);
+  border-radius: 100%;
+  border-bottom-color: transparent;
+  -webkit-animation: spinner 1s linear 0s infinite;
+  animation: spinner 1s linear 0s infinite;
+}
+
+  @-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @import url(https://fonts.googleapis.com/css?family=Arimo);
+  
+#addvideo[type="file"] {
+	 cursor: pointer;
+}
+#addvideo[type="file"]::-webkit-file-upload-button {
+	 background-color: rgb(234, 234, 255);
+	 border: 0;
+	 padding: 1em 2em;
+	 cursor: pointer;
+	 color: #434343;
+	 border-radius: 0.2em;
+}
+#addvideo[type="file"]::-ms-browse {
+	 background-color: rgb(234, 234, 255);
+	 border: 0;
+	 padding: 1em 2em;
+	 cursor: pointer;
+	 color: #434343;
+	 border-radius: 0.2em;
+}
+  
+#addimage[type="file"] {
+  cursor: pointer;
+}
+#addimage[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(234, 234, 255);
+  border: 0;
+  padding: 1em 2em;
+  cursor: pointer;
+ color: #434343;
+  border-radius: 0.2em;
+}
+#addimage[type="file"]::-ms-browse {
+  background-color: rgb(234, 234, 255);
+  border: 0;
+  padding: 1em 2em;
+  cursor: pointer;
+ color: #434343;
+  border-radius: 0.2em;
+}
+.shadeColor{
+  color: #535353;
+}

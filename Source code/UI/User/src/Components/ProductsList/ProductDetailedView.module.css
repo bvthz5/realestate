@@ -1,0 +1,160 @@
+.middle-line {
+  width: 100%;
+  margin-top: 18px;
+  border-bottom: 1px solid #808080;
+}
+.price {
+  font-size: 35px;
+}
+@media (max-width: 1200px) {
+  .propertyCard {
+    overflow-y: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .closeIcon {
+    display: none !important;
+  }
+  .arrowbackIcon {
+    display: grid !important;
+    position: absolute !important;
+    z-index: 999 !important;
+    color: rgb(27, 24, 19);
+    margin-left: -92% !important;
+    margin-top: -800px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1000px) {
+  .propertyDetails {
+    overflow-y: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+    width: 100% !important;
+    margin-left: 1% !important;
+    margin-top: 10% !important;
+  }
+  .imagesandVideos {
+    height: 46% !important;
+    margin-top: 2px !important;
+    border-radius: 2px !important;
+    place-items: center !important;
+    width: 100% !important;
+    margin-left: 45% !important;
+    display: none !important;
+  }
+  .buttonss {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .buyButton {
+    width: 300px !important;
+  }
+  .imagesForMobileView {
+    display: block !important;
+  }
+}
+@media (max-width: 634px) {
+  .buttonGroup {
+    margin-top: 3%;
+    display: grid !important;
+    margin-left: 2%;
+  }
+  .imagesForMobileView {
+    display: block !important;
+  }
+}
+.imagesForMobileView {
+  display: none;
+}
+.arrowbackIos {
+  cursor: pointer;
+  margin-left: 2%;
+}
+.overView {
+  overflow-y: scroll;
+  height: 53.5vh;
+}
+.buttonGroup {
+  margin-top: 3%;
+  display: flex;
+  margin-left: 2%;
+}
+.arrowbackIcon {
+  display: none;
+}
+.tourButton {
+  width: 300px;
+  height: 60px;
+}
+.buyButton {
+  width: 200px;
+  height: 60px;
+}
+.closeIcon {
+  margin-left: 93%;
+  margin-top: -2%;
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.closeIcon:hover {
+  background-color: #d1cdcde7;
+}
+.inline-icon {
+  vertical-align: bottom;
+  font-size: 25px !important;
+  cursor: pointer;
+}
+.map-container {
+  height: 20vh;
+  width: 100%;
+}
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: #c8b6ff;
+  animation: text_713 3.5s ease both infinite;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9a79ff;
+  border-radius: 50px;
+  display: block;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+  position: absolute;
+  transform: translateX(64px);
+  animation: loading_713 3.5s ease both infinite;
+}
+.hideSourceIcon {
+  vertical-align: bottom;
+  font-size: 18px !important;
+  height: 16;
+}
+.description {
+  height: auto;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+.img {
+  height: "100%";
+  width: "100%";
+}
+.video-player::-webkit-media-controls-timeline {
+  display: none !important;
+}

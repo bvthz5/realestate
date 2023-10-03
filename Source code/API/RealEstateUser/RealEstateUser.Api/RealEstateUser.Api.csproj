@@ -1,0 +1,196 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e2c06f5b-4b47-49ef-ae5a-8d61ff3b3d49</UserSecretsId>
+    <CodeAnalysisRuleSet>..\.sonarlint\realestate_dev_user_apicsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\realestate_dev_user_api\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+    <Content Include="bin\Release\net6.0\publish_dev\appsettings.Development.json" />
+    <Content Include="bin\Release\net6.0\publish_dev\appsettings.json" />
+    <Content Include="bin\Release\net6.0\publish_dev\appsettings.Production.json" />
+    <Content Include="bin\Release\net6.0\publish_dev\appsettings.QA.json" />
+    <Content Include="bin\Release\net6.0\publish_dev\RealEstateUser.Api.deps.json" />
+    <Content Include="bin\Release\net6.0\publish_dev\RealEstateUser.Api.runtimeconfig.json" />
+    <Content Include="bin\Release\net6.0\publish_dev\wwwroot\Template\EmailTemplate.txt" />
+    <Content Include="bin\Release\net6.0\publish_qa\appsettings.Development.json" />
+    <Content Include="bin\Release\net6.0\publish_qa\appsettings.json" />
+    <Content Include="bin\Release\net6.0\publish_qa\appsettings.Production.json" />
+    <Content Include="bin\Release\net6.0\publish_qa\appsettings.QA.json" />
+    <Content Include="bin\Release\net6.0\publish_qa\RealEstateUser.Api.deps.json" />
+    <Content Include="bin\Release\net6.0\publish_qa\RealEstateUser.Api.runtimeconfig.json" />
+    <Content Include="bin\Release\net6.0\publish_qa\wwwroot\Template\EmailTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstateUser.Core\RealEstateUser.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Release\net6.0\publish_dev\Azure.Core.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Azure.Identity.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\BCrypt.Net-Next.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\BouncyCastle.Crypto.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Google.Apis.Auth.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Google.Apis.Auth.PlatformServices.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Google.Apis.Core.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Google.Apis.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\MailKit.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Identity.Client.Extensions.Msal.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.IdentityModel.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.OpenApi.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.SqlServer.Server.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\MimeKit.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstate.Domain.Data.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstate.Domain.Data.pdb" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstateUser.Api.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstateUser.Api.exe" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstateUser.Api.pdb" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstateUser.Core.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\RealEstateUser.Core.pdb" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Memory.Data.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Security.Permissions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Text.Json.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\System.Windows.Extensions.dll" />
+    <None Include="bin\Release\net6.0\publish_dev\web.config" />
+    <None Include="bin\Release\net6.0\publish_qa\Azure.Core.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Azure.Identity.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\BCrypt.Net-Next.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\BouncyCastle.Crypto.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Google.Apis.Auth.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Google.Apis.Auth.PlatformServices.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Google.Apis.Core.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Google.Apis.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\MailKit.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Identity.Client.Extensions.Msal.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.IdentityModel.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.OpenApi.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.SqlServer.Server.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\MimeKit.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstate.Domain.Data.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstate.Domain.Data.pdb" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstateUser.Api.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstateUser.Api.exe" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstateUser.Api.pdb" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstateUser.Core.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\RealEstateUser.Core.pdb" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Memory.Data.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Security.Permissions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Text.Json.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\System.Windows.Extensions.dll" />
+    <None Include="bin\Release\net6.0\publish_qa\web.config" />
+  </ItemGroup>
+
+</Project>

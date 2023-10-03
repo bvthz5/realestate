@@ -1,0 +1,50 @@
+.h1 {
+  font-size: 20px;
+  margin-top: -20px;
+}
+.closeIcon {
+  margin-left: 90%;
+  cursor: pointer;
+}
+.form {
+  place-items: center;
+  display: flex;
+}
+.label1 {
+  font-size: 14px;
+  margin-left: 6%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.label2 {
+  font-size: 14px;
+  margin-left: 26%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.input {
+  background: rgb(246, 246, 250);
+  border: 1px solid rgb(209, 209, 213);
+  caret-color: rgb(0, 106, 255);
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 9px 16px;
+  color: rgb(42, 42, 51);
+  width: 130px;
+  height: 25px;
+  margin-left: 10px;
+  box-shadow: none;
+  font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.input:hover {
+  border: 1px solid rgb(0, 106, 255);
+}
+.middle-line {
+  width: 115%;
+  margin-left: -18px;
+  margin-top: 5px;
+  border-bottom: 1px solid #808080;
+}

@@ -1,0 +1,7 @@
+.vs
+obj
+bin
+logs
+.config
+/DeveloperTesting\API\RealEstateAdmin\RealEstateAdmin.Test\bin
+/DeveloperTesting\API\RealEstateAdmin\RealEstateAdmin.Test\obj

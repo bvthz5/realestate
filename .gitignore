@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RealEstate.Domain/obj
+/RealEstate.Infrastructure/obj
+/RealEstateAdmin.Api/obj
+/RealEstateAdmin.Core/obj
+/RealEstateUser.Api/obj
+/RealEstateUser.Core/obj
+/RealEstate.Domain/Migrations
+/.vs
+/Source code/API/RealEstateCommon/RealEstate.Domain.Data/obj
+/Source code/API/RealEstateAdmin/.vs
+/Source code/API/RealEstateAdmin/RealEstateAdmin.Api/obj
+/Source code/API/RealEstateAdmin/RealEstateAdmin.Core/obj
+/Source code/API/RealEstateUser/.vs/RealEstateUser
+/Source code/API/RealEstateUser/RealEstateUser.Api/obj
+/Source code/API/RealEstateUser/RealEstateUser.Core/obj
+/Source code/API/RealEstateUser/.vs/ProjectEvaluation
+
+bin
+obj
+coverage.opencover.xml
+report

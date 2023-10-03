@@ -1,0 +1,76 @@
+.closeIcon {
+  margin: -8;
+  margin-left: 102%;
+  margin-top: -5%;
+  cursor: pointer;
+  padding: 8px;
+  height: 15px;
+}
+.TimePicker {
+  background: rgb(246, 246, 250);
+  border: 1px solid rgb(209, 209, 213);
+
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  width: 335px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.DatePicker {
+  background: rgb(246, 246, 250);
+  border: 1px solid rgb(209, 209, 213);
+  caret-color: rgb(0, 106, 255);
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 9px 16px;
+  color: rgb(42, 42, 51);
+  width: 300px;
+  height: 25px;
+
+  box-shadow: none;
+  font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.middle-line {
+  width: 115%;
+  margin-top: 18px;
+  border-bottom: 1px solid #808080;
+}
+.input {
+  background: rgb(246, 246, 250);
+  border: 1px solid rgb(209, 209, 213);
+  caret-color: rgb(0, 106, 255);
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 9px 16px;
+  color: rgb(42, 42, 51);
+  width: 300px;
+  height: 25px;
+
+  box-shadow: none;
+  font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.label2 {
+  font-size: small;
+  font-weight: bold;
+}
+.error {
+  font-size: small;
+  color: red;
+}
+.heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: -40px;
+}

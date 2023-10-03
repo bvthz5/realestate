@@ -1,0 +1,57 @@
+.arrowbackIcon {
+  margin-top: 85px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.head {
+  margin-left: -150px;
+}
+.enquiryDetails {
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+}
+.rtype {
+  margin-top: -50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  font-size: larger;
+  margin-left: 20px;
+}
+.inline-icon {
+  vertical-align: bottom;
+  font-size: 18px !important;
+}
+.heading {
+  font-size: 30px;
+}
+.box {
+  inline-size: 660px;
+  overflow-wrap: break-word;
+}
+
+.vid {
+  height: "100%";
+  width: "400px";
+  border-radius: "5px";
+  margin-top: "12px";
+}
+.img {
+  height: "100%";
+  width: "400px";
+  border-radius: "5px";
+  margin-top: "12px";
+}
+.forAddress {
+  height: auto;
+  width: 400px;
+  overflow-wrap: break-word;
+}
+.forHouseAddress {
+  width: 90%;
+
+  overflow-wrap: break-word;
+}
